@@ -66,7 +66,6 @@ header.scrolled .site-logo{color:var(--deep)}
 .card{opacity:0;transform:translateY(10px);transition:all 450ms cubic-bezier(.2,.9,.2,1);}
 .card.visible{opacity:1;transform:none}
 .card:hover{transform:translateY(-6px) scale(1.02)}
-
 #category-subpanel {
   display: flex;
   flex-wrap: wrap;
