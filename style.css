@@ -1,0 +1,373 @@
+:root{
+  --beige:#F6F0E6;
+  --gold:#B98B35;
+  --deep:#0b0b0b;
+}
+html,body{
+  height:100%;
+}
+body{
+  background: var(--white, #ffffff);
+  color:var(--deep);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Small custom tweaks to complement Tailwind */
+.rounded-2xl{border-radius:1rem}
+.shadow-md{box-shadow:0 6px 18px rgba(11,11,11,0.06)}
+.shadow-lg{box-shadow:0 20px 40px rgba(11,11,11,0.08)}
+
+/* Hero styles */
+.hero{height:100vh;background-size:cover;position:relative;display:block}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.45);}
+.hero .reveal{position:relative;z-index:2;padding-top:6rem;padding-bottom:6rem;text-shadow:0 12px 30px rgba(0,0,0,0.45)}
+.hero h1{letter-spacing:-0.02em}
+.hero-cta{background:var(--gold);color:var(--deep);box-shadow:0 8px 24px rgba(185,139,53,0.12);transition:transform .22s ease, box-shadow .22s ease, opacity .2s}
+.hero-cta:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 34px rgba(185,139,53,0.18);opacity:0.98}
+.hero .text-white90{opacity:0.92}
+
+/* Logo and header scrolled state */
+.site-logo{color:#ffffff;display:inline-flex;align-items:center;gap:.5rem;transition:color .25s ease, transform .2s ease}
+.site-logo svg{display:block}
+header{transition:background-color .32s ease, box-shadow .32s ease, color .25s ease}
+header.scrolled{background: rgba(255,255,255,0.96);backdrop-filter: blur(6px);-webkit-backdrop-filter: blur(6px);border-bottom:1px solid rgba(0,0,0,0.06);box-shadow:0 6px 20px rgba(16,16,16,0.04)}
+header.scrolled .nav-link{color:var(--deep) !important}
+header.scrolled .site-logo{color:var(--deep)}
+
+/* Nav link default on transparent header */
+.nav-link{transition:color .18s ease}
+
+/* Hero typography: make title a little smaller so image is main focus */
+.hero h1{font-size:clamp(1.8rem,4.5vw,3.4rem)}
+.hero p{font-size:clamp(0.95rem,1.8vw,1.125rem)}
+
+
+/* Toast */
+.toast{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:var(--deep);
+  color:white;
+  padding:12px 18px;
+  border-radius:8px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  z-index:60;
+}
+
+/* Mobile nav placeholder */
+#navToggle{background:transparent}
+
+/* Tabs */
+.tab{background:transparent;border:0;border-bottom:2px solid transparent;}
+.tab[data-active="true"]{border-bottom-color:var(--gold);color:var(--deep);font-weight:600}
+
+/* Card hover */
+.card{opacity:0;transform:translateY(10px);transition:all 450ms cubic-bezier(.2,.9,.2,1);}
+.card.visible{opacity:1;transform:none}
+.card:hover{transform:translateY(-6px) scale(1.02)}
+
+#category-subpanel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#category-subpanel .category-btn,
+.main-tab {
+  font-size: 0.78rem !important;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  padding: 0.6rem 0.9rem !important;
+  border-radius: 999px;
+  min-height: 2.5rem;
+}
+
+.catalog-grid .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(11,11,11,0.06);
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(11,11,11,0.04);
+  overflow: hidden;
+}
+
+.catalog-grid .card > .p-5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 10px 14px;
+}
+
+.catalog-grid .card .text-xl {
+  font-size: 0.72rem !important;
+  line-height: 1.2;
+}
+
+.catalog-grid .card .text-lg {
+  font-size: 0.9rem !important;
+  line-height: 1.3;
+}
+
+.catalog-grid .card .text-sm {
+  font-size: 0.68rem !important;
+  line-height: 1.4;
+}
+
+.catalog-grid .card h4 {
+  margin: 0;
+  line-height: 1.35;
+  font-size: clamp(0.8rem, 1.6vw, 1rem);
+  min-height: 2.8em;
+}
+
+.catalog-grid .card p {
+  margin: 0;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: #4b5563;
+  min-height: 2.8em;
+}
+
+.catalog-grid .card .mt-4 {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.catalog-grid .card .details-btn,
+.catalog-grid .card .order-btn {
+  white-space: nowrap;
+  font-size: 0.7rem;
+  padding: 0.55rem 0.7rem;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+
+.catalog-grid .card .details-btn {
+  flex: 0 0 auto;
+}
+
+.catalog-grid .card .order-btn {
+  flex: 0 0 auto;
+}
+
+/* Modal */
+.modal{display:block}
+.modal.pointer-events-none{pointer-events:none}
+.modal.active{pointer-events:auto;opacity:1}
+.modal .modal-panel{opacity:0;transform:translateY(8px) scale(.98)}
+.modal.active .modal-panel{opacity:1;transform:translateY(0) scale(1)}
+
+/* Backdrop blur for modal overlay */
+.modal-overlay{backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);}
+
+/* Gradient text */
+.gradient-text{background:linear-gradient(90deg,var(--deep),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(12px);transition:all 600ms cubic-bezier(.2,.9,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+
+/* Small adjustments for modal overlay */
+.modal-overlay{opacity:0;transition:opacity .33s}
+.modal.active .modal-overlay{opacity:1}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Чтобы карточки в ряду были одной высоты */
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* 2. Принудительный размер для ВСЕХ картинок */
+.product-image {
+  width: 100% !important;
+  /* Форсируем вертикальный прямоугольник (Соотношение 3:4) */
+  aspect-ratio: 3 / 4 !important; 
+  /* Если старый браузер не знает aspect-ratio, зададим высоту */
+  height: auto !important; 
+  max-height: 380px !important; /* Примерная высота для десктопа */
+  
+  /* Убираем растягивание: картинка вписывается, лишнее обрезается */
+  object-fit: cover !important; 
+  object-position: center !important;
+  
+  /* Фикс для Safari/iPhone */
+  -webkit-transform: translateZ(0); 
+  display: block;
+}
+
+/* 3. Делаем блок с текстом прижатым к низу */
+.card .p-5 {
+  flex-grow: 1; /* Растягивает текст, толкая цену вниз */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Мобильная версия: один товар в колонке */
+@media (max-width: 640px) {
+  #productGrid {
+    grid-template-columns: 1fr !important; /* Строго одна колонка */
+    gap: 24px !important; /* Больше пространства между карточками */
+    padding: 0 16px; /* Отступы от краев экрана */
+  }
+
+  .product-image {
+    /* Для одной колонки лучше сделать фото чуть менее вытянутым */
+    aspect-ratio: 4 / 5 !important; 
+    max-height: 370px !important;
+  }
+
+  .card {
+    border-radius: 20px !important; /* Более мягкие углы для современного вида */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05) !important;
+  }
+
+  .card h4 {
+    font-size: 18px !important; /* Крупный заголовок, так как места много */
+  }
+}
+
+@media (max-width: 475px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    padding: 0 6px !important;
+  }
+
+  .catalog-grid .card {
+    border-radius: 12px;
+    min-height: 100%;
+  }
+
+  .catalog-grid .card > .p-5 {
+    padding: 10px 8px 12px;
+    gap: 8px;
+  }
+
+  .catalog-grid .card .text-xl,
+  .catalog-grid .card .text-lg,
+  .catalog-grid .card .text-sm {
+    letter-spacing: -0.01em;
+  }
+
+  .catalog-grid .card .mt-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .catalog-grid .card .mt-4 > div:first-child {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  .catalog-grid .card .mt-4 > div:last-child {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .catalog-grid .card .details-btn,
+  .catalog-grid .card .order-btn {
+    flex: 1 1 0;
+    width: 100%;
+    padding: 0.52rem 0.45rem;
+    font-size: 0.62rem;
+    text-align: center;
+  }
+
+  .catalog-grid .card p {
+    min-height: 0;
+    font-size: 0.67rem;
+  }
+
+  .catalog-grid .card h4 {
+    min-height: 0;
+    font-size: 0.8rem;
+  }
+
+  .catalog-grid .product-image {
+    aspect-ratio: 3 / 4 !important;
+    max-height: 200px !important;
+  }
+}
+
+/* Общий фикс для картинок (чтобы всегда были одинаковые) */
+.product-image {
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block;
+  background-color: #f9f9f9;
+}
+
+@keyframes pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 rgba(11, 11, 11, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(11, 11, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(11, 11, 11, 0);
+  }
+}
+
+.animate-pulse-custom {
+  animation: pulse-white 2s infinite;
+}
+
+#siteHeader svg {
+  /* Форсируем отрисовку через видеокарту */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  /* Убираем обрезку, если она есть */
+  overflow: visible !important;
+}
+
+#siteHeader svg text {
+  /* Принудительно заставляем браузер видеть градиент */
+  paint-order: stroke fill;
+  /* Убираем эффект "исчезновения" при скролле */
+  isolation: isolate;
+}
+
+
+  
+
+@media (min-width: 550px) {
+  .hero {background-position: 62%;}
+
+  .hero__bg {
+    /* Улучшает четкость при масштабировании */
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: crisp-edges;
+
+    /* Убирает микро-размытие (форсирует использование видеокарты) */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+
+    /* Важно для мобильных: убираем fixed-эффект */
+    /* background-attachment: fixed часто делает картинку жутко нечеткой на iOS */
+    background-attachment: scroll !important; 
+    
+    /* Убедись, что cover не слишком сильно "зумит" центр */
+    background-size: cover;
+    background-position: center center;
+}
+  
+}

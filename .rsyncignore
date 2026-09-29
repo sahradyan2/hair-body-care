@@ -1,0 +1,12 @@
+.git
+.github
+.gitignore
+.rsyncignore
+.env
+.env.*
+node_modules
+vendor
+.DS_Store
+.idea
+.vscode
+*.log

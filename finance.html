@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+         <a class="logo" href="index.html">
+            <div class="header-logo">
+              <svg width="120" height="auto" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A7CFF"/>
+      <stop offset="100%" stop-color="#00B7FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M70 20 L120 40 V78C120 105 98 125 70 135C42 125 20 105 20 78V40L70 20Z"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        fill="none"
+        />
+
+  <!-- Checkmark -->
+  <path d="M48 70 L66 88 L102 52"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        
+        />
+
+  <!-- AML -->
+  <text x="145" y="72" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">AML</text>
+
+  <!-- CHECK -->
+  <text x="145" y="123" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">CHECK</text>
+</svg>
+            </div>
+            <!-- <img class="logo__img" src="./images/dm-white 1.svg" alt=""> -->
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              
+              
+              <li class="menu__list-item">
+                <a href="./lease.html" class="menu__list-link">Начать проверку</a></li>
+                <li class="menu__list-item">
+                <a href="#" class="menu__list-link menu__list-link--active">История</a></li>
+              <li class="menu__list-item">
+                <a href="./contact.html" class="menu__list-link">Контакты</a></li>
+                <!-- <li class="menu__list-item"> 
+                  <a href="./about.html" class="menu__list-link">ABOUT US</a></li>-->
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </header>
+    <main class="main">
+     
+
+      <div class="aml-card aml-card_strory">
+            <h2 class="aml-card_title">История ваших AML проверок и аналитика</h2>
+
+
+      
+      <section class="last-checks">
+    <div class="lc-header">
+        <h2>Последние проверки</h2>
+        <a class="link-stor" href="./lease.html">
+        <button class="lc-add-new">Новая проверка</button>
+        </a>
+    </div>
+    <div class="lc-table-wrapper">
+
+   
+    <table class="lc-table">
+        <thead>
+            <tr>
+                <th>Адрес</th>
+                <th>Риск</th>
+                <th>Оценка</th>
+                <th>Дата</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0x3fc91a3afd70395cd4...</td>
+                <td><span class="lc-risk low">Низкий</span></td>
+                <td>12</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>TJL3Y30xQyBFYaKYc2g5...</td>
+                <td><span class="lc-risk medium">Средний</span></td>
+                <td>47</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>bc1qxy2kgdygjrsqtzq2...</td>
+                <td><span class="lc-risk high">Высокий</span></td>
+                <td>89</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>bc1qxy2kgdygjrsqtzq2...</td>
+                <td><span class="lc-risk high">Высокий</span></td>
+                <td>89</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>bc1qxy2kgdygjrsqtzq2...</td>
+                <td><span class="lc-risk high">Высокий</span></td>
+                <td>89</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+            <tr>
+                <td>0x3fc91a3afd70395cd4...</td>
+                <td><span class="lc-risk low">Низкий</span></td>
+                <td>12</td>
+                <td>03.12.2025</td>
+                <td><a href="#" class="lc-btn">Подробнее</a> <a href="#" class="lc-btn">Скачать</a></td>
+            </tr>
+        </tbody>
+    </table>
+     </div>
+
+    <!-- <button class="lc-load-more">Загрузить еще</button> -->
+</section>
+
+
+
+
+
+    </div>  
+    <section class="services container" id="services">
+
+    <div class="services-grid">
+      <article class="service-card">
+        <img class="icon" src="./img/icon-search.svg" alt="" />
+        <h3>Поиск по реестрам</h3>
+        <p>Моментальные результаты из множества источников с аккуратной агрегацией.</p>
+      </article>
+
+      <article class="service-card">
+        <img class="icon" src="./img/icon-report.svg" alt="" />
+        <h3>Генерация отчётов</h3>
+        <p>Сводные отчёты для внутренних проверок и регуляторов.</p>
+      </article>
+
+      <article class="service-card">
+        <img class="icon" src="./img/icon-analytics.svg" alt="" />
+        <h3>Аналитика рисков</h3>
+        <p>Автоматические метрики для оценки степени риска и рекомендаций.</p>
+      </article>
+
+      <article class="service-card">
+        <img class="icon" src="./img/icon-shield.svg" alt="" />
+        <h3>Мониторинг</h3>
+        <p>Нотификации при изменениях в статусах и появлениях новых записей.</p>
+      </article>
+    </div>
+  </section>
+    </main>
+    <footer class="footer footer-story">
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">
+                Сервисы
+              </p>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./index.html" class="footer__menu-link">
+                Главная
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./lease.html" class="footer__menu-link">
+                Проверить
+              </a>
+            </li>
+            
+          </ul>
+          <ul class="footer__menu-list">
+            
+            <a class="logo logo-footer" href="index.html">
+            <div class="header-logo">
+              <svg width="180" height="auto" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A7CFF"/>
+      <stop offset="100%" stop-color="#00B7FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M70 20 L120 40 V78C120 105 98 125 70 135C42 125 20 105 20 78V40L70 20Z"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        fill="none"
+        />
+
+  <!-- Checkmark -->
+  <path d="M48 70 L66 88 L102 52"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        
+        />
+
+  <!-- AML -->
+  <text x="145" y="72" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">AML</text>
+
+  <!-- CHECK -->
+  <text x="145" y="123" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">CHECK</text>
+</svg>
+            </div>
+            <!-- <img class="logo__img" src="./images/dm-white 1.svg" alt=""> -->
+          </a>
+            
+            
+           
+          </ul>
+          
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">
+                О нас
+              </p>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./finance.html" class="footer__menu-link">
+                История
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./contact.html" class="footer__menu-link">
+                Контакты
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+        
+        <div class="footer__copy">
+          <p class="footer__text">
+            © 2025. Все права защищены. Наш сервис предоставляет аналитическую информацию для AML-оценки криптовалютных транзакций. Данные не являются финансовой или юридической консультацией. Используя сайт, вы подтверждаете согласие с Условиями пользования и Политикой конфиденциальности.
+          </p>
+       
+        </div>
+        <nav class="copy__nav">
+          <ul class="copy__nav-list">
+            <li class="copy__nav-item">
+              <a href="./about — копия.html" class="copy__nav-link">
+                Условия предоставления услуг
+              </a>
+            </li>
+            <li class="copy__nav-item">
+              <a href="./about — копия.html" class="copy__nav-link">
+                Политика конфиденциальности
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+  
+
+    <script src="./js/script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
+</body>
+</html>

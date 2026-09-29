@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="wrapper">
+     <header class="header header-main">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <div class="header-logo">
+              <svg width="120" height="auto" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A7CFF"/>
+      <stop offset="100%" stop-color="#00B7FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M70 20 L120 40 V78C120 105 98 125 70 135C42 125 20 105 20 78V40L70 20Z"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        fill="none"
+        />
+
+  <!-- Checkmark -->
+  <path d="M48 70 L66 88 L102 52"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        
+        />
+
+  <!-- AML -->
+  <text x="145" y="72" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">HAIR</text>
+
+  <!-- CHECK -->
+  <text x="145" y="123" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">BEAUTY</text>
+</svg>
+            </div>
+            <!-- <img class="logo__img" src="./images/dm-white 1.svg" alt=""> -->
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <!-- <li class="menu__list-item"> -->
+                <!-- <a href="./newcar.html" class="menu__list-link">NEW CARS</a></li> -->
+              <!-- <li class="menu__list-item"> -->
+                <!-- <a href="./preowned.html" class="menu__list-link">PRE-OWNED CARS</a></li> -->
+              
+              <li class="menu__list-item">
+                <a href="./newcar.html" class="menu__list-link">Каталог товаров </a></li>
+                <li class="menu__list-item">
+                <a href="./lease.html" class="menu__list-link">Продукция</a></li>
+              <li class="menu__list-item">
+                <a href="./contact.html" class="menu__list-link">Контакты</a></li>
+              <!-- <li class="menu__list-item"> 
+                <a href="./about.html" class="menu__list-link">ABOUT US</a></li>-->
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </header>
+    <main class="main">
+      <section class="choose">
+        <div class="container">
+          <h2 class="section-title">  
+            Найди свой идеальный уход за волосами
+          </h2>
+          <div class="tabs">
+            <div class="tabs__btn">
+              <button class="tabs__btn-item tabs__btn-item--active" data-button="content-1">
+                Шампуни
+              </button>
+              <button class="tabs__btn-item" data-button="content-2">
+                Xiaomoxuan
+              </button>
+              <button class="tabs__btn-item" data-button="content-3">
+                Balmain
+              </button>
+              <button class="tabs__btn-item" data-button="content-4">
+                Oribe
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__content-item tabs__content-item--active" id="content-1">
+                <div class="card">
+                    <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                    <div class="card__content">
+                      <h4 class="card-title">
+                        Xiaomoxuan
+                      </h4>
+                      <p class="card-text">
+                        При покупке от 3х шт 6000грн
+                      </p>
+                      <p class="card-price">
+                        8000грн                 
+                      </p>
+                    </div>
+                    <a class="card-link" href="">
+                      Заказать
+                    </a>
+                    
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/2026-02-06 16.23.09.jpg">
+                    <div class="card__content">
+                    <h4 class="card-title">
+                      Xiaomoxuan
+                    </h4>
+                    <p class="card-text">
+                      При покупке от 3х шт 5000грн
+                    </p>
+                    <p class="card-price">
+                      7000грн                
+                    </p>
+                    </div>
+                    <a class="card-link" href="">
+                      Заказать
+                    </a>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                    <div class="card__content">
+                      <h4 class="card-title">
+                         Xiaomoxuan
+                      </h4>
+                      <p class="card-text">
+                        При покупке от 3х шт 5500грн
+                      </p>
+                      <p class="card-price">
+                        7500грн                 
+                      </p>
+                    </div>  
+                    <a class="card-link" href="">
+                      Заказать
+                    </a>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                    <div class="card__content">
+                      <h4 class="card-title">
+                        Xiaomoxuan
+                      </h4>
+                      <p class="card-text">
+                        При покупке от 3х шт 6000грн
+                      </p>
+                      <p class="card-price">
+                        8000грн                
+                      </p>
+                    </div>  
+                    <a class="card-link" href="">
+                      Заказать
+                    </a>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                  <div class="card__content">
+                    <h4 class="card-title">
+                      Chanel No.5 2023
+                    </h4>
+                    <p class="card-text">
+                      цена от 3х шт 6000грн
+                    </p>
+                    <p class="card-price">
+                      8000грн                 
+                    </p>
+                  </div>
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                  <div class="card__content">
+                  <h4 class="card-title">
+                    Unisex Eau de Parfum
+                  </h4>
+                  <p class="card-text">
+                    При покупке от 3х шт 5000грн
+                  </p>
+                  <p class="card-price">
+                    7000грн                 
+                  </p>
+                  </div>
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                  <div class="card__content">
+                    <h4 class="card-title">
+                       MADEMOISELLE
+                    </h4>
+                    <p class="card-text">
+                      При покупке от 3х шт 5500грн
+                    </p>
+                    <p class="card-price">
+                      7500грн                 
+                    </p>
+                  </div>  
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.09.jpg" alt="">
+                  <div class="card__content">
+                    <h4 class="card-title">
+                      Bleu de Chanel
+                    </h4>
+                    <p class="card-text">
+                      При покупке от 3х шт 6000грн
+                    </p>
+                    <p class="card-price">
+                      8000грн                
+                    </p>
+                  </div>  
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+                
+                
+              </div>
+              <div class="tabs__content-item" id="content-2">
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.49.jpg" alt="">
+                  <div class="card__content">
+                  <h4 class="card-title">
+                    Xiaomoxuan
+                  </h4>
+                  <p class="card-text">
+                    цена от 3х шт 9900
+                  </p>
+                  <p class="card-price">
+                    11000грн                 
+                  </p>
+                  </div>
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+              </div>     
+              <div class="tabs__content-item" id="content-3">
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.49.jpg" alt="">
+                  <div class="card__content">
+                    <h4 class="card-title">
+                      Collagen Hair 2023
+                    </h4>
+                    <p class="card-text">
+                      цена от 3х шт 2000
+                    </p>
+                    <p class="card-price">
+                      4500грн                 
+                    </p>
+                  </div>  
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+              </div>
+              </div>        
+              <div class="tabs__content-item" id="content-4">
+                <div class="card">
+                  <img class="card-img" src="./images/2026-02-06 16.23.49.jpg" alt="">
+                  <div class="card__content">
+                    <h4 class="card-title">
+                      Bodifying Hair Cream
+                    </h4>
+                    <p class="card-text">
+                      цена от 3х шт 500
+                    </p>
+                    <p class="card-price">
+                      1200грн                 
+                    </p>
+                  </div>
+                  <a class="card-link" href="">
+                    Заказать
+                  </a>
+                </div>
+              </div>
+              </div>
+          </div>
+            
+        </div>
+      </section>
+
+      <section class="callback">
+  <h2>Замовити дзвінок</h2>
+  <p>Залиште свої дані, і наш менеджер передзвонить вам для оформлення замовлення.</p>
+  <form id="callbackForm" class="callback-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Ваше ім’я" required>
+    </div>
+    <div class="form-group">
+      <input type="tel" name="phone" placeholder="Ваш телефон" required>
+    </div>
+    <div class="form-group">
+      <textarea name="comment" placeholder="Коментар (необов’язково)"></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Передзвоніть мені</button>
+  </form>
+      </section>
+
+    
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">
+                Сервисы
+              </p>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./index.html" class="footer__menu-link">
+                Главная
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./newcar.html" class="footer__menu-link">
+                Каталог
+              </a>
+            </li>
+            
+          </ul>
+          <ul class="footer__menu-list">
+            
+            <a class="logo logo-footer" href="index.html">
+            <div class="header-logo">
+              <svg width="180" height="auto" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A7CFF"/>
+      <stop offset="100%" stop-color="#00B7FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M70 20 L120 40 V78C120 105 98 125 70 135C42 125 20 105 20 78V40L70 20Z"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        fill="none"
+        />
+
+  <!-- Checkmark -->
+  <path d="M48 70 L66 88 L102 52"
+        stroke="url(#blueGlow)"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        
+        />
+
+        
+
+  <!-- AML -->
+  <text x="145" y="72" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">HAIR</text>
+
+  <!-- CHECK -->
+  <text x="145" y="123" font-size="52" font-family="Arial, sans-serif" font-weight="700"
+        fill="url(#blueGlow)">BEAUTY</text>
+</svg>
+            </div>
+            <!-- <img class="logo__img" src="./images/dm-white 1.svg" alt=""> -->
+          </a>
+            
+            
+           
+          </ul>
+          
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">
+                О нас
+              </p>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./lease.html" class="footer__menu-link">
+                Продукция
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="./contact.html" class="footer__menu-link">
+                Контакты
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+        
+        <div class="footer__copy">
+          <p class="footer__text">
+            © 2026. Ми продаємо лише оригінальну продукцію. Усі товари сертифіковані та відповідають міжнародним стандартам якості. Ми співпрацюємо тільки з офіційними постачальниками, щоб ви отримували найкраще.
+          </p>
+       
+        </div>
+        <nav class="copy__nav">
+          <ul class="copy__nav-list">
+            <li class="copy__nav-item">
+              <a href="./about — копия.html" class="copy__nav-link">
+                Доставка та оплата
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+  
+
+
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
+</body>
+</html>

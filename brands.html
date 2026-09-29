@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Історія та філософія брендів — Hair & Body Care</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deep: '#1E293B',
+            gold: '#D4AF37',
+            accent: '#3B82F6'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+  
+    .scrolled {
+      background-color: rgba(30, 41, 59, 0.95);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .brand-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .brand-card:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- ШАПКА / HEADER -->
+ <!-- ШАПКА / HEADER -->
+  <header id="siteHeader" class="fixed bg-[#fff] top-0 left-0 right-0 z-40  backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20"> <a href="index.html" class="flex items-center" aria-label="На главную">
+          <svg width="110" height="auto" viewBox="145 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1A7CFF"/>
+                <stop offset="100%" stop-color="#b78a35"/>
+              </linearGradient>
+            </defs>
+            <text x="145" y="72" font-size="52" font-family="Arial, sans-serif" font-weight="700" fill="#b78a35" style="fill: url(#blueGlow)">HAIR&</text>
+            <text x="145" y="123" font-size="52" font-family="Arial, sans-serif" font-weight="700" fill="#b78a35" style="fill: url(#blueGlow)">Body Care</text>
+          </svg>
+        </a>
+  
+        <nav class="hidden md:flex items-center gap-8 text-[13px] font-semibold uppercase tracking-wider">
+          <a href="index.html" class="text-deep hover:text-gold transition-colors">Головна</a>
+          <a href="catalog.html" class="text-gold">Каталог</a> <a href="./about — копия.html" class="text-deep hover:text-gold transition-colors">Доставка</a>
+        </nav>
+  
+        <div class="flex items-center">
+          <a href="tel:+380660957727" class="animate-pulse-custom group flex items-center gap-3 bg-deep text-white px-4 py-2.5 rounded-full hover:bg-gold transition-all duration-300 shadow-lg">
+            <div class="bg-white/20 rounded-full p-1.5 group-hover:bg-white/30 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <span class="text-xs md:text-sm font-bold hidden sm:block">+38 (066) 095-77-27</span>
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO-СЕКЦІЯ -->
+  <!-- HERO-СЕКЦІЯ -->
+  <section class="bg-[#6b3572] text-white pt-32 pb-16 px-6 text-center border-b border-white/10">
+    <div class="max-w-4xl mx-auto">
+      <span class="text-gold text-sm font-semibold uppercase tracking-widest text-yellow-300">Світ люксового догляду</span>
+      <h1 class="text-4xl md:text-5xl font-bold mt-2 mb-4">Історія та Філософія Брендів</h1>
+      <p class="text-purple-100 text-base md:text-lg max-w-2xl mx-auto">
+        Ми обираємо тільки світових лідерів у сфері трихології, догляду за волоссям та космецевтики. Дізнайтеся більше про наукові розробки та унікальні формули кожного бренду.
+      </p>
+    </div>
+  </section>
+
+  <!-- ШВИДКА НАВІГАЦІЯ ПО БРЕНДАХ -->
+  <div class="sticky top-16 z-40 bg-white border-b border-gray-200 py-3 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 flex items-center gap-3 overflow-x-auto whitespace-nowrap scrollbar-none">
+      <span class="text-xs font-bold text-gray-400 uppercase mr-2">Перейти:</span>
+      <a href="#balmain" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Balmain</a>
+      <a href="#hadat" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Hadat</a>
+      <a href="#lebel" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Lebel</a>
+      <a href="#medik8" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Medik8</a>
+      <a href="#mediceuticals" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Mediceuticals</a>
+      <a href="#oribe" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Oribe</a>
+      <a href="#rejuran" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Rejuran</a>
+      <a href="#xiaomoxuan" class="text-xs bg-gray-100 hover:bg-deep hover:text-white text-gray-700 px-3 py-1.5 rounded-full transition">Xiaomoxuan</a>
+    </div>
+  </div>
+
+  <!-- ОСНОВНИЙ КОНТЕНТ: СЕКЦІЇ БРЕНДІВ -->
+  <main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- BALMAIN -->
+    <section id="balmain" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5">
+          <img src="./images/brands/images.jpeg" alt="Balmain Hair Couture" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Франція 🇫🇷</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Кутюрний догляд</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Balmain Hair Couture</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Понад 50 років тому відомий французький дім моди Balmain започаткував лінійку догляду та стайлінгу Balmain Hair Couture. Вона створена для того, щоб втілити закулісні секрети модних показів у повсякденний догляд за волоссям.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Формули продуктів збагачені протеїнами шовку та натуральною аргановою олією, що забезпечує глибоке живлення, легкість укладання та фірмовий впізнаваний аромат розкоші.
+          </p>
+          <a href="catalog.html?brand=Balmain" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Balmain
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HADAT -->
+    <section id="hadat" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 lg:order-2">
+          <img src="./images/brands/hadat-photo.jpeg" alt="Hadat Cosmetics" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7 lg:order-1">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Ізраїль 🇮🇱</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Лакунулярна технологія</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Hadat Cosmetics</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Бренд Hadat Cosmetics заснований у 2016 році в Ізраїлі. В основі бренду лежить запатентована технологія **Sea Oil Silk** — гармонійне поєднання мінералів Мертвого моря, натуральних олій та екстрактів водоростей.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Продукція працює за принципом салонного відновлення вдома: відновлює структуру волосся зсередини, повертає йому природну еластичність, шовковистість та глянцевий блиск без обтяження.
+          </p>
+          <a href="catalog.html?brand=hadat" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Hadat
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEBEL -->
+    <section id="lebel" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5">
+          <img src="./images/brands/IMG_9531.png" alt="Lebel Cosmetics" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Японія 🇯🇵</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Нанотехнології</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Lebel</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Японський бренд Lebel з 1977 року створює продукти на межі високих нанотехнологій та традиційної східної медицини. Філософія бренду — «здорове волосся починається зі здорової шкіри голови».
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Знаменита програма «Абсолютне щастя для волосся» та домашні лінії Lebel відновлюють молекулярну структуру волосини, захищають від термічних пошкоджень та утримують вологу.
+          </p>
+          <a href="catalog.html?brand=lebel" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Lebel
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIK8 -->
+    <section id="medik8" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 lg:order-2">
+          <img src="./images/brands/medik8.jpg" alt="Medik8 Skincare" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7 lg:order-1">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Великобританія 🇬🇧</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Доказова космецевтика</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Medik8</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Британський експерт у догляді за шкірою Medik8 розробляє засоби на основі суворих наукових досліджень. Бренд відомий своєю революційною філософією **CSA**: Вітамін C + Сонцезахист вранці, Вітамін A (ретинол) увечері.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Формули Medik8 забезпечують виражений антивіковий ефект, боротьбу з пігментацією та висипаннями з мінімальним ризиком подразнень завдяки запатентованій технології вивільнення активів.
+          </p>
+          <a href="catalog.html?brand=medik8" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Medik8
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICEUTICALS -->
+    <section id="mediceuticals" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5">
+          <img src="./images/brands/mediceuticals-big.jpg" alt="Mediceuticals Laboratories" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">США 🇺🇸</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Трихологічне лікування</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Mediceuticals</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Американська лабораторія Mediceuticals спеціалізується на дерматологічних рішеннях для шкіри голови та волосся. Препарати бренду ефективно усувають проблеми випадіння волосся, лупи, себореї та истончення.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Продукція містить фармацевтичні інгредієнти очищеної якості, безпечна для фарбованого волосся та підходить для чутливої шкіри.
+          </p>
+          <a href="catalog.html?brand=mediceuticals" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Mediceuticals
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORIBE -->
+    <section id="oribe" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 lg:order-2">
+          <img src="./images/brands/Oribe-Hair-Products-Review-Fashion-Jacksonbg.webp" alt="Oribe Hair Care" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7 lg:order-1">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">США 🇺🇸</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Преміальний стайлінг</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Oribe</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Створений легендарним стилістом Орбе Каналесом, бренд Oribe став синонімом безкомпромісної розкоші. Кожен засіб — це поєднання парфумерних ароматів Франції, вишуканого пакування та передових наукових формул.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Продукція захищає волосся від фотостаріння, руйнування кератину та втрати кольору, надаючи неперевершеного об'єму та шовковистості.
+          </p>
+          <a href="catalog.html?brand=oribe" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Oribe
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REJURAN -->
+    <section id="rejuran" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5">
+          <img src="./images/brands/rejuran-clinic-care-set-(3).jpg" alt="Rejuran Cosmetics" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Південна Корея 🇰🇷</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Полінуклеотиди c-PDRN</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Rejuran</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Південнокорейська космецевтика Rejuran — це прорив у сфері регенеративної медицини. Головний компонент формул — запатентовані полінуклеотиди **c-PDRN**, отримані з ДНК лосося.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Молекули c-PDRN легко проникають у глибокі шари шкіри, прискорюють регенерацію клітин, стимулюють вироблення колагену та відновлюють пошкоджений захисний бар'єр.
+          </p>
+          <a href="catalog.html?brand=rejuran" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Rejuran
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- XIAOMOXUAN -->
+    <section id="xiaomoxuan" class="brand-card bg-white rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 scroll-mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 lg:order-2">
+          <img src="./images/brands/podarochnyj-nabor-dlya-volos-xiaomoxuan-2-produkta-kupit--4.png" alt="Xiaomoxuan Natural Care" class="w-full h-80 object-cover rounded-xl shadow-md bg-gray-100">
+        </div>
+        <div class="lg:col-span-7 lg:order-1">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">Тайвань 🇹🇼</span>
+            <span class="text-xs font-semibold bg-gray-100 text-gray-600 px-2.5 py-1 rounded">Органічне чайне дерево</span>
+          </div>
+          <h2 class="text-3xl font-bold text-deep mb-4">Xiaomoxuan</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Тайванський бренд Xiaomoxuan завоював світову популярність завдяки унікальним маскам та шампуням на основі листя тайванського чайного дерева та натуральних амінокислот.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Засоби миттєво реанімують навіть дуже пошкоджене, освітлене або сухе волосся, прибирають пухнастість, роблять його слухняним та дарують дзеркальний блиск.
+          </p>
+          <a href="catalog.html?brand=xiaomoxuan" class="inline-block bg-deep text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+            Переглянути товари Xiaomoxuan
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="bg-deep text-white py-8 border-t border-gray-800 mt-20">
+    <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-400">
+      <p>© 2026 Hair & Body Care. Всі права захищені.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
